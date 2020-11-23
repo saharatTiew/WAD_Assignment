@@ -1,0 +1,68 @@
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+}
+
+#sub-total {
+    border-top: solid #000 1px;
+}
+
+#table-first-part-data {
+    border-bottom: solid #000 1px;
+}
+
+#table-first-part {
+    margin: 0px 0px 20px 0px;
+}
+
+#total-due {
+    border-bottom: solid #000 1px;
+}
+
+th {
+    background-color: #eeeeee;
+    color: navy;
+    border: solid #000 1px;
+}
+
+.data {
+    border-left: solid #000 1px;
+    border-right: solid #000 1px;
+}
+
+.r {
+    text-align: right;
+}
+
+#header-part-left {
+    float: left;
+}
+
+#header-part-right {
+    float: right;
+}
+
+#customer-info-left {
+    float: left;
+}
+
+#customer-info-right {
+    float: right;
+    margin-right: 700px;
+}
+
+#body> * {
+    clear: both;
+}
+
+.margin-left {
+    margin-left: 30px;
+}
+
+.margin-left-header {
+    margin-left: 6px;
+}
