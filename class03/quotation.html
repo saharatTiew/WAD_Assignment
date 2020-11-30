@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Sample Quotation</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="saharatTiew">
+
+    <link rel="stylesheet" href="../class02/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-part-left">
+            <div id="address">
+                <b>Your company name here</b>
+                <p>Your company address line 1 here</p>
+                <p>Your company address line 2 here</p>
+                <p>Your company address line 3 here</p>
+            </div>
+            <br>
+            <div id="contact">
+                <p>Your ZIP code here</p>
+                <p>Phone: 12345678 <span id="margin-left-phone">Mobile: 12345678</span></p>
+            </div>
+        </div>
+
+        <div id="header-part-right">
+            <b id="image-title">QUOTATION</b>
+            <img id="money-icon" src="https://www.codester.com/static/uploads/items/000/019/19456/icon.png">
+            <p id="date">2010/7/27</p>
+        </div>
+    </div>
+
+    <div id="body">
+        <hr>
+
+        <div id="customer-info">
+            <div id="customer-info-left">
+                <b>Page No.2</b>
+                <p>To: <span class="margin-left-header">Sample customer name 001</span></p>
+                <p class="margin-left">Sample address line1</p>
+                <p class="margin-left">Sample address line2</p>
+                <p class="margin-left">Sample address line3</p>
+            </div>
+
+            <div id="customer-info-right">
+                <b>Currency Dollar</b>
+                <p>To: <span class="margin-left-header">Sample customer name 001</span></p>
+                <p class="margin-left">Ship to line1</p>
+                <p class="margin-left">Ship to line2</p>
+                <p class="margin-left">Ship to line3</p>
+            </div>
+        </div>
+
+        <div id="table-first-part">
+            <table>
+                <thead>
+                    <tr class="table-first-part-data">
+                        <th class="data-padding">Salesperson</th>
+                        <th class="data-padding">Your P.O. No.</th>
+                        <th class="data-padding">Date Shipped</th>
+                        <th class="data-padding">Shipped Via</th>
+                        <th class="data-padding">F.O.B. Point</th>
+                        <th class="data-padding">Terms</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-first-part-data">
+                        <td class="data data-padding">Administrator</td>
+                        <td class="data data-padding">Sample PO#</td>
+                        <td class="data data-padding">2011/3/18</td>
+                        <td class="data data-padding">Courier Services</td>
+                        <td class="data data-padding">U.S.A.</td>
+                        <td class="data data-padding">2 Weeks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="table-second-part">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Quantity</th>
+                        <th>Description</th>
+                        <th>Unit Price</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTable">
+                    <tr>
+                        <td class="data r data-quan-padding">1.5</td>
+                        <td class="data data-desc-padding">Stock Item Example 0001</td>
+                        <td class="data r data-price-padding">1,000.00</td>
+                        <td class="data r data-price-padding">1,500.00</td>
+                    </tr>
+                    <tr>
+                        <td class="data r data-quan-padding">1</td>
+                        <td class="data data-desc-padding">Stock Item Example 0002</td>
+                        <td class="data r data-price-padding">2,000.00</td>
+                        <td class="data r data-price-padding">2,000.00</td>
+                    </tr>
+                    <tr>
+                        <td class="data r data-quan-padding">2</td>
+                        <td class="data data-desc-padding">Service Charge Invoicing Item 001</td>
+                        <td class="data r data-price-padding">100.00</td>
+                        <td class="data r data-price-padding">100.00</td>
+                    </tr>
+                    <tr>
+                        <td class="data r data-quan-padding">3</td>
+                        <td class="data data-desc-padding">
+                            Service Charge Invoicing Item 002<br />
+                            Additional line 1 for this item<br />
+                            Additional line 2 for this item
+                        </td>
+                        <td class="data r data-price-padding">200.00</td>
+                        <td class="data r data-price-padding">200.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr id="sub-total">
+                        <td class="data r" colspan=3>Subtotal</td>
+                        <td class="data r data-total-padding">
+                            <span id="subtotal-value"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="data r" colspan=3>Sales Tax</td>
+                        <td class="data r data-total-padding" id="sales-tax-value">430.00</td>
+                    </tr>
+                    <tr>
+                        <td class="data r" colspan=3>Shipping &amp; Handling</td>
+                        <td class="data r data-total-padding">0.00</td>
+                    </tr>
+                    <tr id="total-due">
+                        <td class="data r" colspan=3>Total Due</td>
+                        <td class="data r data-total-padding" id="total-due-value">4,730.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <br>
+        <button id="btnAdd">Add Item</button>
+
+    </div>
+</body>
+
+</html>
