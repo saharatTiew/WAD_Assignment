@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Sample Quotation</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/quotation_styles.css">
+    <link rel="stylesheet" href="css/about_styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="js/quotation_scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#">WAD</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active" id="firstItem">
+                <a class="nav-link" href="../about/about.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../classworks/quotation.html">Class Works</a>
+              </li>
+            </ul>
+            <!-- <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+          </div>
+        </nav>
+    </header>
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <div class="col-sm-10">
+                <div>
+                    <p class="font-weight-bold">Your company name here</p>
+                    <p>Your company address line 1 here</p>
+                    <p>Your company address line 2 here</p>
+                    <p>Your company address line 3 here</p>
+
+                    <br>
+
+                    <p>Your ZIP code here</p>
+                    <p>Phone: 12345678 <span id="margin-left-phone">Mobile: 12345678</span></p>
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <p class="font-weight-bold" id="image-title">QUOTATION</p>
+                <img id="money-icon" src="https://www.codester.com/static/uploads/items/000/019/19456/icon.png">
+                <p id="date">2010/7/27</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="body">
+        <hr>
+        <div id="customer-info" class="container-fluid">
+            <div class="row">
+                <div id="customer-info-left" class="col-sm-9">
+                    <p class="font-weight-bold">Page No.2</p>
+                    <p>To: <span class="margin-left-header">Sample customer name 001</span></p>
+                    <p class="margin-left">Sample address line1</p>
+                    <p class="margin-left">Sample address line2</p>
+                    <p class="margin-left">Sample address line3</p>
+                </div>
+
+                <div id="customer-info-right" class="col-sm-3">
+                    <p class="font-weight-bold">Currency Dollar</p>
+                    <p>To: <span class="margin-left-header">Sample customer name 001</span></p>
+                    <p class="margin-left">Ship to line1</p>
+                    <p class="margin-left">Ship to line2</p>
+                    <p class="margin-left">Ship to line3</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="table-first-part">
+            <table class="table">
+                <thead>
+                    <tr class="border-bottom border-dark">
+                        <th class="data-padding border-right border-dark">Salesperson</th>
+                        <th class="data-padding border-right border-dark">Your P.O. No.</th>
+                        <th class="data-padding border-right border-dark">Date Shipped</th>
+                        <th class="data-padding border-right border-dark">Shipped Via</th>
+                        <th class="data-padding border-right border-dark">F.O.B. Point</th>
+                        <th class="data-padding border-right border-dark">Terms</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-bottom border-dark">
+                        <td class="border-left border-right border-dark data-padding">Administrator</td>
+                        <td class="border-left border-right border-dark data-padding">Sample PO#</td>
+                        <td class="border-left border-right border-dark data-padding">2011/3/18</td>
+                        <td class="border-left border-right border-dark data-padding">Courier Services</td>
+                        <td class="border-left border-right border-dark data-padding">U.S.A.</td>
+                        <td class="border-left border-right border-dark data-padding">2 Weeks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="table-first-part">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="border-left border-right border-dark">Quantity</th>
+                        <th class="border-left border-right border-dark">Description</th>
+                        <th class="border-left border-right border-dark">Unit Price</th>
+                        <th class="border-left border-right border-dark">Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTable">
+                    <tr>
+                        <td class="border-left border-right border-dark r data-quan-padding">1.5</td>
+                        <td class="border-left border-right border-dark data-desc-padding">Stock Item Example 0001</td>
+                        <td class="border-left border-right border-dark r data-price-padding">1,000.00</td>
+                        <td class="border-left border-right border-dark r data-price-padding">1,500.00</td>
+                    </tr>
+                    <tr>
+                        <td class="border-left border-right border-dark r data-quan-padding">1</td>
+                        <td class="border-left border-right border-dark data-desc-padding">Stock Item Example 0002</td>
+                        <td class="border-left border-right border-dark r data-price-padding">2,000.00</td>
+                        <td class="border-left border-right border-dark r data-price-padding">2,000.00</td>
+                    </tr>
+                    <tr>
+                        <td class="border-left border-right border-dark r data-quan-padding">2</td>
+                        <td class="border-left border-right border-dark data-desc-padding">Service Charge Invoicing Item 001</td>
+                        <td class="border-left border-right border-dark r data-price-padding">100.00</td>
+                        <td class="border-left border-right border-dark r data-price-padding">100.00</td>
+                    </tr>
+                    <tr>
+                        <td class="border-left border-right border-dark r data-quan-padding">3</td>
+                        <td class="border-left border-right border-dark data-desc-padding">
+                            Service Charge Invoicing Item 002<br />
+                            Additional line 1 for this item<br />
+                            Additional line 2 for this item
+                        </td>
+                        <td class="border-left border-right border-dark r data-price-padding">200.00</td>
+                        <td class="border-left border-right border-dark r data-price-padding">200.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="border-top border-dark">
+                        <td class="r" colspan=3>Subtotal</td>
+                        <td class="border-left border-right border-bottom border-dark r data-total-padding">
+                            <span id="subtotal-value"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="data r" colspan=3>Sales Tax</td>
+                        <td class="border-left border-right border-bottom border-dark r data-total-padding" id="sales-tax-value">430.00</td>
+                    </tr>
+                    <tr>
+                        <td class="data r" colspan=3>Shipping &amp; Handling</td>
+                        <td class="border-left border-right border-bottom border-dark r data-total-padding">0.00</td>
+                    </tr>
+                    <tr>
+                        <td class="data r" colspan=3>Total Due</td>
+                        <td class="border-left border-right border-bottom border-dark r data-total-padding" id="total-due-value">4,730.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <br>
+        <button id="btnAdd" lass="btn btn-outline-secondary">Add Item</button>
+
+    </div>
+</body>
+
+</html>

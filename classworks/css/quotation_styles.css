@@ -1,0 +1,88 @@
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+}
+
+#table-first-part {
+    margin: 0px 0px 20px 5px;
+}
+
+th {
+    background-color: #eeeeee;
+    color: navy;
+    border: solid #000 1px;
+}
+
+.r {
+    text-align: right;
+}
+
+.margin-left {
+    margin-left: 30px;
+}
+
+.margin-left-header {
+    margin-left: 6px;
+}
+
+#margin-left-phone {
+    margin-left: 40px;
+}
+
+#image-title {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    font-size: 28px;
+}
+
+#money-icon {
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+#date {
+    position: absolute;
+    top: 230px;
+    right: 60px
+}
+
+.data-padding {
+    padding: 0px 50px 0px 10px;
+}
+
+.data-desc-padding {
+    padding: 0px 315px 0px 20px;
+}
+
+.data-price-padding {
+    padding: 0px 25px 0px 50px;
+}
+
+.data-quan-padding {
+    padding: 0px 10px 0px 10px;
+}
+
+.data-total-padding {
+    padding: 0px 25px 0px 50px;
+}
+
+#btnAdd {
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+#container {
+    margin-top : 80px
+}
+
+#firstItem {
+    margin-right : 5px;
+}
