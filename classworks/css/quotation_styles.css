@@ -78,3 +78,11 @@ th {
     margin-left: 5px;
     margin-bottom: 20px;
 }
+
+#container {
+    margin-top : 80px
+}
+
+#firstItem {
+    margin-right : 5px;
+}

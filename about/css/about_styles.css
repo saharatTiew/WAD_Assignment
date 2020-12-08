@@ -1,0 +1,17 @@
+#container {
+    margin-top : 80px
+}
+
+#firstItem {
+    margin-right : 5px;
+}
+
+#first-slide {
+    width: 100%;
+    height: 300px;
+}
+
+#first-circle {
+    margin-left : 10px;
+    margin-right : 200px;
+}
