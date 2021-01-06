@@ -110,6 +110,39 @@ $(document).ready(function () {
         })
     })
 
+    $('.btn-period-rate').each(function () {
+        $(this).click(function () {
+            var price = parseInt($('#price-modal').val());
+            var yearPeriod = parseInt($(this).val());
+            var interest = 0;
+            if (yearPeriod === 2) {
+                interest = 4;
+            } else if (yearPeriod === 3) {
+                interest = 8;
+            }
+
+            var monthPeriod = yearPeriod * 12;
+            var yearlyInterest = price * interest / 100;
+            var monthlyInterest = yearlyInterest / 12;
+            var totalInterest = yearlyInterest * yearPeriod;
+            var totalPayment = price + totalInterest;
+            var monthlyPayment = totalPayment / monthPeriod;
+
+            $('#period-modal').text(monthPeriod);
+            $('#monthly-interest-modal').text(monthlyInterest
+                .toLocaleString('th-TH', {
+                    'minimumFractionDigits': 2,
+                    'maximumFractionDigits': 2
+                }));
+            $('#monthly-payment-modal').text(monthlyPayment
+                .toLocaleString('th-TH', {
+                    'minimumFractionDigits': 2,
+                    'maximumFractionDigits': 2
+                }));
+            $('#buy-button').prop('disabled', false);
+        })
+    })
+
     $('#buy-button').click(function () {
         alert('Done!');
         location.reload();
