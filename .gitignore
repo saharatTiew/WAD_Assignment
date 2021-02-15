@@ -14,14 +14,14 @@ my-routing.7z
 my-routing.zip
 class07_08.zip
 # node_modules
-my-routing/nope_modules
+my-routing/node_modules
 assignment02
 
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-**/node_modules
+# **/node_modules
 /.pnp
 .pnp.js
 
@@ -31,6 +31,7 @@ assignment02
 # production
 **/build
 
+my-app/
 
 # misc
 .DS_Store
