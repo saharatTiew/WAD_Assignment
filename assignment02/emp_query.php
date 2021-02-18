@@ -1,5 +1,4 @@
 <?php
- 
 require_once("config.php");
 
 // DB table to use
@@ -8,7 +7,6 @@ $table = 'employees';
 // Table's primary key
 $primaryKey = 'emp_no';
  
-
 $columns = array(
     array('db' => 'emp_no', 'dt' => "emp_no"),
     array('db' =>  'first_name', 'dt' => "first_name"),
@@ -20,13 +18,6 @@ $columns = array(
     array('db' =>  'salary', 'dt' => "salary")
 );
  
-// SQL server connection information
-// $sql_details = array(
-//     'user' => 'root',
-//     'pass' => 'darknessGoliath1.',
-//     'db'   => 'assignment2',
-//     'host' => 'localhost'
-// );
 $sql_details = array(
     'user' => $username,
     'pass' => $password,
@@ -34,9 +25,9 @@ $sql_details = array(
     'host' => $servername
 );
  
-
 require('./ssp.class.php' );
  
 echo json_encode(
     SSP::simple( $_GET, $sql_details, $table, $primaryKey, $columns )
 );
+?>
